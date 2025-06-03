@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Token Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans+JP:wght@500&family=Secular+One&display=swap" rel="stylesheet">
+</head>
+<body class="discord-token-login-popup">
+    <div class="container">
+        <div class="header">
+            <h1 class="title"> Discord Token Login </h1> 
+        </div>
+        <div class="inner-container">
+            <div class="login-form">
+                <label for="token" class="token-label">Enter Your Discord Token</label>
+                <input id="token" type="password" spellcheck="false" placeholder="Your Discord Token">
+
+                <!-- New Section for Saved Tokens -->
+                <input id="tokenName" type="text" placeholder="Optional Name for Token">
+                <select id="tokenSelect">
+                    <option value="">-- Select a saved token --</option>
+                </select>
+                <button id="save-token" class="login-button" title="Save Token">Save Token</button>
+
+                <a href="https://discord.gg/48qbg6UP9g" title="Discord Server" class="support-link">Need Support?</a>
+                <button id="submit" class="login-button" title="Login">Login</button>
+                <button id="copy-token-button" class="copy-button" title="Copy Token"></button>
+                <div id="overlay"></div>
+            </div>
+        </div>
+    </div>
+    <div class="message-box" id="messageBox"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
